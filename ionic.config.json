@@ -1,0 +1,7 @@
+{
+  "name": "parcial2eas11",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
