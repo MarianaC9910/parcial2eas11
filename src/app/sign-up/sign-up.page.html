@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>sign-up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">sign-up</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>-->
+<ion-content>
+  <form class="bg-white p-6 rounded-lg shadow-md w-96" (submit)="onSubmit()">
+    <input type="text" class="w-full p-2 border rounded mt-1"placeholder="pregunta"  [(ngModel)]="name" name="name" required>
+    <input type="email" class="w-full p-2 border rounded mt-1" placeholder="email" [(ngModel)]="email" name="email" required>
+    <input type="password" class="w-full p-2 border rounded mt-1" placeholder="contraseña" [(ngModel)]="password" name="password" required>
+    <ion-button class="w-full bg-blue-500 text-white p-2 mt-4 rounded hover:bg-blue-400" type="submit">crear cuenta</ion-button>
+  </form>
+</ion-content>
+
